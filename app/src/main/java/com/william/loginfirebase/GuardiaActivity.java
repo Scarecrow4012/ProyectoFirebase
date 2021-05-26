@@ -18,7 +18,8 @@ public class GuardiaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guardia);
-
+        mAuth = FirebaseAuth.getInstance();
+        mButtonSignOut = (Button) findViewById(R.id.btnSignOut);
         mButtonSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
