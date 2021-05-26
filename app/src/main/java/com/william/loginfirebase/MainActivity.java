@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull  Task<Void> task2) {
                             if(task2.isSuccessful()){
-                                startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+                                startActivity(new Intent(MainActivity.this, GuardiaActivity.class));
                                 finish();
 
                             }else{
